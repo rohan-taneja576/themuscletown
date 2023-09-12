@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import Logo from "../../assets/Logo.png";
+import Logo from "../../assets/logo.png";
 import GitHub from "../../assets/github.png";
 import LinkedIn from "../../assets/linkedin.png";
 import Instagram from "../../assets/instagram.png";
