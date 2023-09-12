@@ -1,6 +1,7 @@
 .hero {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .left-h {
   padding: 2rem;
@@ -9,6 +10,7 @@
   display: flex;
   gap: 2rem;
   flex-direction: column;
+  z-index: 2;
 }
 .right-h {
   flex: 1;
@@ -160,7 +162,9 @@
 .hero-blur {
   width: 22rem;
   height: 30rem;
-  left: 0;
+  left: 2rem;
+  top: 10rem;
+  z-index: 1;
 }
 
 @media screen and (max-width: 768px) {
