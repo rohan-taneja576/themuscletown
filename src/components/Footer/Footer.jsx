@@ -16,7 +16,7 @@ const Footer = () => {
           <img src={Instagram} alt="" />
         </div>
         <div className="logo-text">
-          <img src={Logo} alt="" className="logo" />
+          <img src={Logo} alt="" />
           <div className="text">
             <span>The </span>
             <span>Muscle Town</span>
