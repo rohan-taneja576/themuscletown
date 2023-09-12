@@ -46,5 +46,5 @@
   position: absolute;
   border-radius: 50%;
   filter: blur(150px);
-  z-index: -9;
+  z-index: 1;
 }
