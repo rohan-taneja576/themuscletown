@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./Header.css";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/Logo.png";
 import Bars from "../../assets/bars.png";
 
 const Header = () => {
@@ -9,7 +9,14 @@ const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   return (
     <div className="header">
-      <img src={Logo} alt="" className="logo" />
+      {/* <img src={Logo} alt="" className="logo" /> */}
+      <div className="logo-text">
+        <img src={Logo} alt="" className="logo" />
+        <div className="text">
+          <span>The </span>
+          <span>Muscle Town</span>
+        </div>
+      </div>
       {menuOpened === false && mobile === true ? (
         <div
           style={{
@@ -86,6 +93,16 @@ const Header = () => {
               smooth={true}
             >
               Testimonials
+            </Link>
+          </li>
+          <li>
+            <Link
+              // onClick={() => setMenuOpened(false)}
+              to="/contact-us"
+              // spy={true}
+              // smooth={true}
+            >
+              Contact Us
             </Link>
           </li>
         </ul>

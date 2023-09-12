@@ -15,9 +15,9 @@
 .right-h {
   flex: 1;
   position: relative;
-  background-color: var(--orange);
+  background: var(--planCard);
 }
-.the-best-ad {
+/* .the-best-ad {
   margin-top: 4rem;
   background-color: #363d42;
   border-radius: 4rem;
@@ -29,11 +29,11 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}
-.the-best-ad > span {
+} */
+/* .the-best-ad > span {
   z-index: 2;
-}
-.the-best-ad > div {
+} */
+/* .the-best-ad > div {
   position: absolute;
   background-color: var(--orange);
   width: 5.4rem;
@@ -41,7 +41,7 @@
   left: 8px;
   border-radius: 3rem;
   z-index: 1;
-}
+} */
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -59,6 +59,7 @@
   letter-spacing: 1px;
   width: 80%;
 }
+/* }
 .figures {
   display: flex;
   gap: 2rem;
@@ -74,7 +75,7 @@
 .figures > div > span:nth-of-type(2) {
   color: var(--gray);
   text-transform: uppercase;
-}
+} */
 .hero-buttons {
   display: flex;
   gap: 1rem;
@@ -82,14 +83,17 @@
 }
 .hero-buttons > :nth-child(1) {
   color: #fff;
-  background-color: var(--orange);
+  background: var(--planCard);
   width: 8rem;
 }
 .hero-buttons > :nth-child(2) {
   color: #fff;
   background-color: transparent;
   width: 8rem;
-  border: 2px solid var(--orange);
+  border-width: 2px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source: var(--planCard);
 }
 .right-h > .btn {
   position: absolute;
@@ -97,7 +101,7 @@
   top: 2rem;
   color: black;
 }
-.heart-rate {
+/* .heart-rate {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -109,8 +113,8 @@
   position: absolute;
   right: 4rem;
   top: 7rem;
-}
-.heart-rate > img {
+} */
+/* .heart-rate > img {
   width: 2rem;
 }
 .heart-rate > :nth-child(2) {
@@ -119,21 +123,21 @@
 .heart-rate > :nth-child(3) {
   color: #fff;
   font-size: 1.5rem;
-}
+} */
 .hero-image {
   position: absolute;
-  top: 10rem;
-  right: 8rem;
-  width: 23rem;
+  top: 0rem;
+  right: 2rem;
+  width: 19rem;
 }
-.hero-image-back {
+/* .hero-image-back {
   position: absolute;
   top: 4rem;
   right: 20rem;
   z-index: -1;
   width: 15rem;
-}
-.calories {
+} */
+/* .calories {
   display: flex;
   gap: 2rem;
   border-radius: 5px;
@@ -158,21 +162,21 @@
 .calories > div > :nth-child(2) {
   color: #fff;
   font-size: 1.5rem;
-}
-.hero-blur {
+} */
+/* .hero-blur {
   width: 22rem;
   height: 30rem;
   left: 2rem;
   top: 10rem;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .hero {
     flex-direction: column;
   }
-  .hero-blur {
+  /* .hero-blur {
     width: 14rem;
-  }
+  } */
   .the-best-ad {
     margin-top: 0;
     font-size: small;
