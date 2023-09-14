@@ -6,7 +6,6 @@ import { testimonialsData } from "../data/testimonialsData";
 const Testimonals = () => {
   const transition = { type: "spring", duration: 3 };
   const [selected, setSelected] = useState(0);
-  console.log({ testimonialsData });
   const tLength = testimonialsData.length;
   return (
     <div className="Testimonals" id="testimonials">
