@@ -11,7 +11,7 @@ export const plansData = [
       </svg>
     ),
     name: "BASIC PLAN",
-    price: "25",
+    price: "4500",
     features: [
       "2 day free trial",
       "3-month access",
@@ -32,7 +32,7 @@ export const plansData = [
       </svg>
     ),
     name: "PREMIUM PLAN",
-    price: "30",
+    price: "9000",
     features: [
       "3 day free trial",
       "6 months access",
@@ -54,7 +54,7 @@ export const plansData = [
       </svg>
     ),
     name: "PRO PLAN",
-    price: "45",
+    price: "18000",
     features: [
       "3 day free trial",
       "12 months access",

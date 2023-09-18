@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "../assets/logo.png";
 import GitHub from "../assets/github.png";
 import LinkedIn from "../assets/linkedin.png";
@@ -33,9 +34,21 @@ const Footer = () => {
             offers:
           </p>
           <div className="social-links">
-            <AiFillFacebook />
-            <AiFillInstagram />
-            <AiFillTwitterCircle />
+            <Link
+              href="https://www.facebook.com/profile.php?id=61551040723082"
+              target="_blank"
+            >
+              <AiFillFacebook />
+            </Link>
+            <Link
+              href="https://www.instagram.com/themuscletownfbd/"
+              target="_blank"
+            >
+              <AiFillInstagram />
+            </Link>
+            <Link href="https://twitter.com/themuscletown" target="_blank">
+              <AiFillTwitterCircle />
+            </Link>
           </div>
         </div>
         <div className="contact-us">
@@ -43,11 +56,11 @@ const Footer = () => {
           <div className="content">
             <div className="email">
               <AiOutlineMail fontSize={"2rem"} />
-              <div className="text">themuscletown@gmail.com</div>
+              <div className="text">themuscletownfbd@gmail.com</div>
             </div>
             <div className="phone">
               <AiOutlinePhone fontSize={"2rem"} />
-              <div className="text">+91-8708142241</div>
+              <div className="text">+91-8930042241</div>
             </div>
             <div className="address">
               <AiOutlineEnvironment fontSize={"2rem"} />

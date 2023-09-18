@@ -654,6 +654,9 @@ code {
   font-size: 3rem;
   cursor: pointer;
 }
+.social-links > a {
+  color: #fff;
+}
 .content,
 .contact-us,
 .social-block {

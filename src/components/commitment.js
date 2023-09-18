@@ -5,7 +5,7 @@ const Commitment = () => {
     <div className="Commitment">
       <div className="commitment-header">
         <span className="stroke-text">Our </span>
-        <span>Commitments</span>
+        <span>Commitment</span>
         <span className="stroke-text">to you</span>
       </div>
       <div className="commitment-text">

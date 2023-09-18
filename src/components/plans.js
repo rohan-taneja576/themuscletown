@@ -1,7 +1,8 @@
 import React from "react";
+import Image from "next/image";
+import { FaIndianRupeeSign } from "react-icons/fa";
 import { plansData } from "../data/plansData";
 import whiteTick from "../assets/whiteTick.png";
-import Image from "next/image";
 
 const Plans = () => {
   return (
@@ -19,7 +20,9 @@ const Plans = () => {
             <div className="plan" key={i}>
               {_.icon}
               <span>{_.name}</span>
-              <span>$ {_.price}</span>
+              <span>
+                <span>&#8377;</span> {_.price}
+              </span>
               <div className="features">
                 {_.features?.map((feature, i) => {
                   return (
