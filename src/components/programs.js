@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
-// import "./Programs.css";
 import { programsData } from "../data/programsData";
+import { Link } from "react-scroll";
 
 const Programs = () => {
   return (
@@ -19,10 +19,9 @@ const Programs = () => {
               <span>{_.heading}</span>
               <span>{_.details}</span>
               <div className="join-now">
-                <span>Join Now</span>
-                <span>
-                  <AiOutlineArrowRight />
-                </span>
+                <Link to="plans" spy={true} smooth={true}>
+                  Join Now <AiOutlineArrowRight />
+                </Link>
               </div>
             </div>
           );

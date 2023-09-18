@@ -5,6 +5,7 @@ import image2 from "../assets/image2.png";
 import image3 from "../assets/image3.png";
 import image4 from "../assets/image4.png";
 import tick from "../assets/tick.png";
+import { Link } from "react-scroll";
 
 const Reasons = () => {
   return (
@@ -24,20 +25,39 @@ const Reasons = () => {
         <div className="details-r">
           <div>
             <Image src={tick} alt="" />
-            <span>OVER 140+ EXPERT COACHES</span>
+            <span>State-of-the-art equipment</span>
           </div>
           <div>
             <Image src={tick} alt="" />
-            <span>TRAIN SMARTER AND FASTER THAN BEFORE</span>
+            <span>Expert trainers</span>
           </div>
           <div>
             <Image src={tick} alt="" />
-            <span>1 FREE PROGRAM FOR NEW MEMBER</span>
+            <span>Variety of fitness classes</span>
           </div>
           <div>
             <Image src={tick} alt="" />
-            <span>RELIABLE PARTNERS</span>
+            <span>Personalized workout plans</span>
           </div>
+          <div>
+            <Image src={tick} alt="" />
+            <span>Supportive community</span>
+          </div>
+          <div>
+            <Image src={tick} alt="" />
+            <span>Convenient hours</span>
+          </div>
+          <div>
+            <Image src={tick} alt="" />
+            <span>Membership Options</span>
+          </div>
+        </div>
+        <div className="reasons-button">
+          <button className="btn">
+            <Link to="plans" spy={true} smooth={true}>
+              Join us today!
+            </Link>
+          </button>
         </div>
       </div>
     </div>

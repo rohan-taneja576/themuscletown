@@ -13,9 +13,11 @@ export const plansData = [
     name: "BASIC PLAN",
     price: "25",
     features: [
-      "2 hours of excercises",
-      "Free consultaion to coaches",
-      "Access to The Community",
+      "2 day free trial",
+      "3-month access",
+      "On-ground coaches for assistance",
+      "Yoga and aerobics classes",
+      "Access to exclusive WhatsApp community",
     ],
   },
   {
@@ -32,9 +34,12 @@ export const plansData = [
     name: "PREMIUM PLAN",
     price: "30",
     features: [
-      "5 hour of excercises",
-      "Free consultaion of Coaches",
-      "Accessto minibar",
+      "3 day free trial",
+      "6 months access",
+      "on-ground coaches for assistance",
+      "Yoga and aerobics classes",
+      "Access to exclusive WhatsApp community",
+      "Access to steam bath",
     ],
   },
   {
@@ -51,9 +56,14 @@ export const plansData = [
     name: "PRO PLAN",
     price: "45",
     features: [
-      "8 hours of excercises",
-      "Consultation of Private Coach",
-      "Free Fitness Merchandises",
+      "3 day free trial",
+      "12 months access",
+      "on-ground coaches for assistance",
+      "Yoga and aerobics classes",
+      "Access to exclusive WhatsApp community",
+      "Access to steam bath",
+      "Customized diet plan",
+      "Exclusive consultation",
     ],
   },
 ];

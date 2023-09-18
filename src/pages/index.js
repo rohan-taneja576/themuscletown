@@ -5,6 +5,7 @@ import Hero from "../components/hero";
 import Plans from "../components/plans";
 import Testimonals from "../components/testimonals";
 import Footer from "../components/footer";
+import Commitments from "../components/commitment";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
         />
       </Head>
       <Hero />
+      <Commitments />
       <Programs />
       <Reasons />
       <Plans />

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Header from "./header";
 import hero_image from "../assets/hero_image.png";
+import { Link } from "react-scroll";
 
 export default function Hero() {
   return (
@@ -11,22 +12,24 @@ export default function Hero() {
         <Header />
         <div className="hero-text">
           <div>
-            <span className="stroke-text">Shape </span>
-            <span>Your</span>
+            <span className="stroke-text">Your Journey </span>
+            <span>to a</span>
           </div>
           <div>
-            <span>Ideal body</span>
+            <span>Healthier You Begins Here</span>
           </div>
           <div>
             <span>
-              In here we will help you to shape and build your ideal body and
-              live up your life to fullest
+              Look no further – we are your ultimate fitness destination.
             </span>
           </div>
         </div>
         <div className="hero-buttons">
-          <buttons className="btn">Get Started</buttons>
-          <buttons className="btn">Learn More</buttons>
+          <button className="btn">
+            <Link to="plans" spy={true} smooth={true}>
+              Explore More
+            </Link>
+          </button>
         </div>
       </div>
       <div className="right-h">

@@ -7,9 +7,9 @@ const Plans = () => {
   return (
     <div className="plans-container">
       <div className="programs-header" style={{ gap: "2rem" }}>
-        <span className="stroke-text">READY TO START</span>
+        <span className="stroke-text">START</span>
         <span>YOUR JOURNEY</span>
-        <span className="stroke-text">NOW WITHUS</span>
+        <span className="stroke-text">WITH US!</span>
       </div>
 
       {/* Plan card */}
@@ -30,10 +30,7 @@ const Plans = () => {
                   );
                 })}
               </div>
-              <div>
-                <span>See more benefits -&gt;</span>
-              </div>
-              <button className="btn">Join now</button>
+              <button className="btn">Sign up Now!</button>
             </div>
           );
         })}

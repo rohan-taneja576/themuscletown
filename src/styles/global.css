@@ -96,7 +96,7 @@ code {
   cursor: pointer;
   color: var(--purple);
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .header > :nth-child(2) {
     position: fixed;
     right: 2rem;
@@ -107,7 +107,7 @@ code {
     background-color: var(--void);
     padding: 2rem;
   }
-}
+} */
 /* End of Header CSS */
 
 /* Hero CSS */
@@ -121,7 +121,7 @@ code {
   padding: 1.5rem;
   flex: 3;
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
   flex-direction: column;
   z-index: 2;
 }
@@ -135,7 +135,7 @@ code {
   flex-direction: column;
   gap: 1.5rem;
   text-transform: uppercase;
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
   text-overflow: inherit;
@@ -155,16 +155,23 @@ code {
 .hero-buttons > :nth-child(1) {
   color: #fff;
   background: var(--planCard);
-  width: 8rem;
+  border: navajowhite;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 10px;
 }
-.hero-buttons > :nth-child(2) {
+.reasons-button {
+  display: flex;
+  gap: 1rem;
+  font-weight: normal;
+}
+.reasons-button > :nth-child(1) {
   color: #fff;
-  background-color: transparent;
-  width: 8rem;
-  border-width: 2px;
-  border-style: solid;
-  border-image-slice: 1;
-  border-image-source: var(--planCard);
+  background: var(--planCard);
+  border: navajowhite;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 10px;
 }
 .right-h > .btn {
   position: absolute;
@@ -180,7 +187,7 @@ code {
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .hero {
     flex-direction: column;
   }
@@ -242,9 +249,38 @@ code {
     left: 2rem;
     top: 0rem;
   }
-}
+} */
 
 /* End of Hero CSS */
+
+/* Commitments CSS */
+
+.Commitment {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+.commitment-header {
+  display: flex;
+  gap: 5rem;
+  font-weight: bold;
+  font-size: 3rem;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.commitment-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0 10rem;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+/* End of Commitments CSS */
 
 /* Programs CSS */
 
@@ -303,21 +339,6 @@ code {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-  .programs-header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: x-large;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-  .programs-categories {
-    flex-direction: column;
-  }
-}
-
 /* End of Programs CSS */
 
 /* Reasons CSS */
@@ -339,29 +360,29 @@ code {
 .left-r > :nth-child(1) {
   width: 15rem;
   grid-row: 1/3;
-  height: 33rem;
+  height: 37rem;
 }
 .left-r > :nth-child(2) {
   width: auto;
   grid-column: 2/4;
-  height: 19rem;
+  height: 21rem;
 }
 .left-r > :nth-child(3) {
-  width: 16rem;
+  width: 18.7rem;
   grid-row: 2;
   grid-column: 2/3;
   height: auto;
 }
 .left-r > :nth-child(4) {
-  width: 12.8rem;
+  width: 13.2rem;
   grid-row: 2;
   grid-column: 3/4;
-  height: 13rem;
+  height: 15rem;
 }
 .right-r {
   flex: 1 1;
   text-transform: uppercase;
-  gap: 1rem;
+  gap: 1.5rem;
   display: flex;
   flex-direction: column;
 }
@@ -377,14 +398,14 @@ code {
 .details-r {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 .details-r > div {
   display: flex;
   font-size: 1rem;
   gap: 1rem;
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .Reasons {
     flex-direction: column;
   }
@@ -407,7 +428,7 @@ code {
     width: 7rem;
     height: 6rem;
   }
-}
+} */
 
 /* End of Reason CSS */
 
@@ -434,7 +455,9 @@ code {
   color: #fff;
   gap: 2rem;
   padding: 1.5rem;
-  width: 15rem;
+  width: 19rem;
+  height: 36rem;
+  justify-content: space-around;
 }
 .plan:nth-child(2) {
   background: var(--planCard);
@@ -477,14 +500,14 @@ code {
   color: orange;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .plans {
     flex-direction: column;
   }
   .plan > :nth-child(2) {
     transform: none;
   }
-}
+} */
 
 /* End of Plans CSS */
 
@@ -560,7 +583,7 @@ code {
   font-size: 2rem;
   color: #fff;
 }
-
+/* 
 @media screen and (max-width: 768px) {
   .Testimonals {
     flex-direction: column;
@@ -591,7 +614,7 @@ code {
     bottom: 0;
     left: 0;
   }
-}
+} */
 
 /* End of Testimonals CSS */
 
@@ -606,21 +629,50 @@ code {
 .footer {
   padding: 1rem 2rem;
   display: flex;
-  flex-direction: column;
   gap: 4rem;
+  align-items: start;
+  justify-content: space-evenly;
+  height: 15rem;
+  color: #fff;
+}
+.footer-text {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 20rem;
+  gap: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+.social-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .social-links {
   display: flex;
   gap: 4rem;
+  font-size: 3rem;
+  cursor: pointer;
 }
-.social-links > img {
+.content,
+.contact-us,
+.social-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.email,
+.phone,
+.address {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+/* .social-links > img {
   width: 2rem;
   height: 2rem;
   cursor: pointer;
-}
+} */
 .logo-text {
   display: flex;
   align-items: center;
@@ -640,3 +692,176 @@ code {
 }
 
 /* End of Footer CSS */
+
+@media screen and (max-width: 768px) {
+  .header > :nth-child(2) {
+    position: fixed;
+    right: 2rem;
+    z-index: 99;
+  }
+  .header-menu {
+    flex-direction: column;
+    background-color: var(--void);
+    padding: 2rem;
+  }
+  .plans {
+    flex-direction: column;
+  }
+  .plan > :nth-child(2) {
+    transform: none;
+  }
+  .Reasons {
+    flex-direction: column;
+  }
+  .left-r {
+    grid-auto-rows: auto;
+    overflow: hidden;
+  }
+  .left-r > :nth-child(1) {
+    width: 7rem;
+    height: 17rem;
+  }
+  .left-r > :nth-child(2) {
+    width: 15rem;
+    height: 10rem;
+  }
+  .left-r > :nth-child(3) {
+    width: 7rem;
+  }
+  .left-r > :nth-child(4) {
+    width: 7rem;
+    height: 6rem;
+  }
+  .programs-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: xx-large;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .programs-categories {
+    flex-direction: column;
+  }
+  .commitment-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: xx-large;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .commitment-text {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .reasons-button > button {
+    width: 100%;
+  }
+  .plans-container {
+    margin-top: 0rem;
+  }
+  .plan:nth-child(2) {
+    transform: scale(1);
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .the-best-ad {
+    margin-top: 0;
+    font-size: small;
+    align-self: center;
+    transform: scale(0.8);
+  }
+  .hero-text {
+    font-size: 1.5rem;
+    text-align: center;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-text > div:nth-of-type(3) {
+    font-size: small;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+  .hero-buttons > :nth-child(1) {
+    width: 100%;
+  }
+  .figures > div > span:nth-of-type(1) {
+    font-size: large;
+  }
+  .figures > div > span:nth-of-type(2) {
+    font-size: small;
+  }
+  .right-h {
+    position: relative;
+    background: none;
+  }
+  .heart-rate {
+    left: 1rem;
+    top: 2rem;
+  }
+  .calories {
+    position: relative;
+    top: 5rem;
+    left: 2rem;
+  }
+  .calories > img {
+    width: 2rem;
+  }
+  .calories > div > :nth-child(2) {
+    color: #fff;
+    font-size: 1rem;
+  }
+  .hero-image {
+    position: relative;
+    width: 15rem;
+    left: 7rem;
+    top: 4rem;
+    align-self: center;
+  }
+  .hero-image-back {
+    width: 15rem;
+    left: 2rem;
+    top: 0rem;
+  }
+  .Testimonals {
+    flex-direction: column;
+  }
+  .left-t > :nth-child(2),
+  .left-t > :nth-child(3) {
+    font-size: xx-large;
+  }
+  .right-t {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .right-t > div {
+    position: relative;
+    display: none;
+  }
+  .right-t > img {
+    top: 0;
+    right: 0;
+    position: relative;
+    align-self: center;
+  }
+  .right-t > :last-child {
+    display: block;
+    bottom: 0;
+    left: 0;
+  }
+  .footer {
+    flex-direction: column;
+    height: auto;
+  }
+}
