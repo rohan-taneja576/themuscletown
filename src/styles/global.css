@@ -671,9 +671,9 @@ code {
   align-items: center;
   gap: 1rem;
 }
-.phone {
-  color: #fff;
-  text-decoration: none;
+.phone .text {
+  color: #fff !important;
+  text-decoration: none !important;
 }
 /* .social-links > img {
   width: 2rem;
@@ -870,5 +870,9 @@ code {
   .footer {
     flex-direction: column;
     height: auto;
+  }
+  .phone .text {
+    color: #fff !important;
+    text-decoration: none !important;
   }
 }
