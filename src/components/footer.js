@@ -34,19 +34,16 @@ const Footer = () => {
             offers:
           </p>
           <div className="social-links">
-            <Link
-              href="https://www.facebook.com/profile.php?id=61551040723082"
-              target="_blank"
-            >
+            <Link href="https://www.facebook.com/muscletownfbd" target="_blank">
               <AiFillFacebook />
             </Link>
             <Link
-              href="https://www.instagram.com/themuscletownfbd/"
+              href="https://www.instagram.com/muscletownfbd/"
               target="_blank"
             >
               <AiFillInstagram />
             </Link>
-            <Link href="https://twitter.com/themuscletown" target="_blank">
+            <Link href="https://twitter.com/muscletownfbd" target="_blank">
               <AiFillTwitterCircle />
             </Link>
           </div>
