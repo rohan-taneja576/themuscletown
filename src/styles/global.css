@@ -671,6 +671,10 @@ code {
   align-items: center;
   gap: 1rem;
 }
+.phone a {
+  text-decoration: none;
+  color: #fff;
+}
 /* .social-links > img {
   width: 2rem;
   height: 2rem;
