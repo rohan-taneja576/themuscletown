@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
             <div className="phone">
               <AiOutlinePhone fontSize={"2rem"} />
-              <span className="text">"+91-8930042241"</span>
+              <span className="text">{"+91-8930042241"}</span>
             </div>
             <div className="address">
               <AiOutlineEnvironment fontSize={"2rem"} />
