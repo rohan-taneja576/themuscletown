@@ -671,10 +671,6 @@ code {
   align-items: center;
   gap: 1rem;
 }
-.phone .text {
-  color: #fff !important;
-  text-decoration: none !important;
-}
 /* .social-links > img {
   width: 2rem;
   height: 2rem;
@@ -691,11 +687,6 @@ code {
 }
 .logo-text img {
   width: 25%;
-}
-.text {
-  display: flex;
-  flex-direction: column;
-  font-size: 1rem;
 }
 
 /* End of Footer CSS */
@@ -870,9 +861,5 @@ code {
   .footer {
     flex-direction: column;
     height: auto;
-  }
-  .phone .text {
-    color: #fff !important;
-    text-decoration: none !important;
   }
 }

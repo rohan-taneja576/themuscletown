@@ -10,7 +10,6 @@ const Header = () => {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      console.log("window.innerHeight", window.innerHeight);
       if (window.innerWidth <= 768) {
         setMobile(true);
       } else {

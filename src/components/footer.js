@@ -2,16 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../assets/logo.png";
-import GitHub from "../assets/github.png";
-import LinkedIn from "../assets/linkedin.png";
-import Instagram from "../assets/instagram.png";
 import {
   AiFillFacebook,
   AiFillInstagram,
   AiFillTwitterCircle,
-  AiFillTwitterSquare,
   AiOutlineEnvironment,
-  AiOutlineFileMarkdown,
   AiOutlineMail,
   AiOutlinePhone,
 } from "react-icons/ai";
@@ -57,12 +52,12 @@ const Footer = () => {
             </div>
             <div className="phone">
               <AiOutlinePhone fontSize={"2rem"} />
-              <div className="text">893-004-2241</div>
+              <span className="text">+91-8930042241</span>
             </div>
             <div className="address">
               <AiOutlineEnvironment fontSize={"2rem"} />
               <div className="text">
-                Huda Sector 2, near Sadbhavna hospital, Fatehabad (Haryana),
+                Huda Sector 3, near Sadbhavna hospital, Fatehabad (Haryana),
                 125050
               </div>
             </div>
