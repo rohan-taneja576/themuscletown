@@ -18,10 +18,6 @@ const Footer = () => {
       <div className="footer">
         <div className="logo-text">
           <Image src={Logo} alt="" />
-          <div className="text">
-            <span>The </span>
-            <span>Muscle Town</span>
-          </div>
         </div>
         <div className="social-block">
           <p style={{ margin: 0 }}>

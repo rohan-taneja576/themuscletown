@@ -1,7 +1,6 @@
 import React from "react";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import Image from "next/image";
 import { programsData } from "../data/programsData";
-import { Link } from "react-scroll";
 
 const Programs = () => {
   return (
@@ -15,13 +14,18 @@ const Programs = () => {
         {programsData?.map((_) => {
           return (
             <div className="category">
-              {_.image}
-              <span>{_.heading}</span>
+              <div className="category-heading">
+                {_.image}
+                <span>{_.heading}</span>
+              </div>
               <span>{_.details}</span>
-              <div className="join-now">
-                <Link to="plans" spy={true} smooth={true}>
-                  Join Now <AiOutlineArrowRight />
-                </Link>
+              <div className="category-image">
+                <Image
+                  src={_.backgroundImage}
+                  alt=""
+                  width={100}
+                  height={100}
+                />
               </div>
             </div>
           );

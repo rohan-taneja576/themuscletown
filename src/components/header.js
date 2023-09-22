@@ -22,10 +22,6 @@ const Header = () => {
     <div className="header">
       <div className="logo-text">
         <Image src={Logo} alt="" className="logo" />
-        <div className="text">
-          <span>The </span>
-          <span>Muscle Town</span>
-        </div>
       </div>
       {menuOpened === false && mobile === true ? (
         <div

@@ -1,5 +1,3 @@
-// import React from "react";
-// import "./Hero.css";
 import Image from "next/image";
 import Header from "./header";
 import hero_image from "../assets/hero_image.png";

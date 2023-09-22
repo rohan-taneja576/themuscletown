@@ -18,8 +18,10 @@ const Plans = () => {
         {plansData?.map((_, i) => {
           return (
             <div className="plan" key={i}>
+              {/* <div className="plan-header"> */}
               {_.icon}
               <span>{_.name}</span>
+              {/* </div> */}
               <span>
                 <span>&#8377;</span> {_.price}
               </span>

@@ -1,5 +1,10 @@
 import { MdSportsGymnastics } from "react-icons/md";
 import { TbYoga } from "react-icons/tb";
+import image3 from "../assets/image3.png";
+import personalTraining from "../assets/personal_training.jpeg";
+import yoga from "../assets/yoga.jpeg";
+import aerobics from "../assets/aerobics.jpeg";
+
 export const programsData = [
   {
     image: (
@@ -15,6 +20,7 @@ export const programsData = [
     heading: "Strength Training",
     details:
       "In this program, you are trained to improve your strength through many exercises.",
+    backgroundImage: image3,
   },
   {
     image: (
@@ -35,17 +41,20 @@ export const programsData = [
     heading: "Personal Training",
     details:
       "In this program, you are trained to do sequential moves in range of 20 until 30 minutes.",
+    backgroundImage: personalTraining,
   },
   {
     image: <TbYoga />,
     heading: "Yoga",
     details:
       "This program is suitable for you who wants to get rid of your fat and lose their weight.",
+    backgroundImage: yoga,
   },
   {
     image: <MdSportsGymnastics />,
     heading: "Aerobics",
     details:
       "This programs is designed for those who exercises only for their body fitness not body building.",
+    backgroundImage: aerobics,
   },
 ];
