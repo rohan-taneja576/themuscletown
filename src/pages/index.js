@@ -25,7 +25,7 @@ function Home() {
       <Programs />
       <Reasons />
       <Plans />
-      <Testimonals />
+      {/* <Testimonals /> */}
       <Footer />
     </div>
   );

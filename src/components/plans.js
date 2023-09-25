@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaIndianRupeeSign } from "react-icons/fa";
 import { plansData } from "../data/plansData";
 import whiteTick from "../assets/whiteTick.png";
+import { Link } from "react-scroll";
 
 const Plans = () => {
   return (
@@ -25,7 +26,7 @@ const Plans = () => {
               <span>
                 <span>&#8377;</span> {_.price}
               </span>
-              <div className="features">
+              {/* <div className="features">
                 {_.features?.map((feature, i) => {
                   return (
                     <div className="feature">
@@ -34,8 +35,16 @@ const Plans = () => {
                     </div>
                   );
                 })}
-              </div>
-              <button className="btn">Sign up Now!</button>
+              </div> */}
+              <Link
+                to="footer"
+                spy={true}
+                smooth={true}
+                style={{ cursor: "pointer" }}
+              >
+                Know More
+              </Link>
+              {/* <button className="btn" >Know More!</button> */}
             </div>
           );
         })}

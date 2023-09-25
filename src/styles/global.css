@@ -83,7 +83,7 @@ code {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
-  width: 10rem;
+  width: 100%;
 }
 .header-menu {
   list-style: none;
@@ -267,10 +267,10 @@ code {
 .join-now > img {
   width: 1rem;
 }
-.category:hover {
+/* .category:hover {
   background: var(--planCard);
   cursor: pointer;
-}
+} */
 
 /* End of Programs CSS */
 
@@ -365,13 +365,13 @@ code {
   gap: 2rem;
   padding: 1.5rem;
   width: 19rem;
-  height: 36rem;
+  /* height: 36rem; */
   justify-content: space-around;
 }
-.plan:nth-child(2) {
+/* .plan:nth-child(2) {
   background: var(--planCard);
   transform: scale(1.1);
-}
+} */
 .plan > svg {
   fill: var(--orange);
   width: 2rem;
@@ -382,7 +382,7 @@ code {
   font-weight: bold;
 }
 .plan > :nth-child(3) {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 .plan > :nth-child(5) {
@@ -402,12 +402,12 @@ code {
   width: 1rem;
   height: auto;
 }
-.plans > :nth-child(2) > svg {
+/* .plans > :nth-child(2) > svg {
   fill: #fff;
-}
-.plans > :nth-child(2) > button {
+} */
+/* .plans > :nth-child(2) > button {
   color: orange;
-}
+} */
 /* End of Plans CSS */
 
 /* Testimonals CSS */
@@ -511,13 +511,16 @@ code {
   text-transform: uppercase;
 }
 .social-block {
-  display: flex;
-  flex-direction: column;
+  width: 45%;
   align-items: center;
+}
+.contact-us {
+  width: 30%;
 }
 .social-links {
   display: flex;
   gap: 4rem;
+  width: 30%;
   font-size: 3rem;
   cursor: pointer;
 }
@@ -543,7 +546,7 @@ code {
   color: #fff;
 }
 .logo-text {
-  width: 10rem;
+  width: 25%;
 }
 .logo-text img {
   width: 100%;
@@ -721,5 +724,16 @@ code {
   .footer {
     flex-direction: column;
     height: auto;
+  }
+  .logo-text {
+    width: 80%;
+  }
+
+  .social-block,
+  .contact-us {
+    width: 100%;
+  }
+  .social-links {
+    width: auto;
   }
 }
