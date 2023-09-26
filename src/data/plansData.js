@@ -53,7 +53,7 @@ export const plansData = [
       </svg>
     ),
     name: "PREMIUM PLAN(6 Months)",
-    price: "9000/12,500",
+    price: "9000/12000",
     features: [
       "3 day free trial",
       "6 months access",
