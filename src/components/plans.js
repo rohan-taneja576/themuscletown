@@ -1,9 +1,11 @@
 import React from "react";
+import { Box, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import { FaIndianRupeeSign } from "react-icons/fa";
+import { Link } from "react-scroll";
+import ReactWhatsapp from "react-whatsapp";
 import { plansData } from "../data/plansData";
 import whiteTick from "../assets/whiteTick.png";
-import { Link } from "react-scroll";
 
 const Plans = () => {
   return (
@@ -18,34 +20,48 @@ const Plans = () => {
       <div className="plans">
         {plansData?.map((_, i) => {
           return (
-            <div className="plan" key={i}>
-              {/* <div className="plan-header"> */}
+            <Box
+              key={i}
+              display={"flex"}
+              flexDirection="column"
+              background="#656565"
+              color="#fff"
+              gap="2rem"
+              padding="1.5rem"
+              width="19rem"
+              justify-content="space-around"
+              className="plan"
+            >
               {_.icon}
-              <span>{_.name}</span>
-              {/* </div> */}
-              <span>
-                <span>&#8377;</span> {_.price}
-              </span>
-              {/* <div className="features">
-                {_.features?.map((feature, i) => {
-                  return (
-                    <div className="feature">
-                      <Image src={whiteTick} alt="" />
-                      <span key={i}>{feature}</span>
-                    </div>
-                  );
-                })}
-              </div> */}
-              <Link
-                to="footer"
-                spy={true}
-                smooth={true}
-                style={{ cursor: "pointer" }}
+              <Text fontSize={"1.5rem"} fontWeight={"600"}>
+                {_.name}
+              </Text>
+              <Box display={"flex"} gap={"1rem"} alignItems={"center"}>
+                <Text fontSize={"1.2rem"} fontWeight={"600"}>
+                  Basic:{" "}
+                </Text>
+                <Text fontWeight={"500"}>&#8377; {_.price.basic}</Text>
+              </Box>
+              <Box display={"flex"} gap={"1rem"} alignItems={"center"}>
+                <Text fontSize={"1.2rem"} fontWeight={"600"}>
+                  Elite:{" "}
+                </Text>
+                <Text fontWeight={"500"}>&#8377; {_.price.elite}</Text>
+              </Box>
+              <ReactWhatsapp
+                number="+91 8930042241"
+                message="https://themuscletown.in/"
               >
+                {/* <Link
+                  // to="footer"
+                  spy={true}
+                  smooth={true}
+                  style={{ cursor: "pointer" }}
+                > */}
                 Know More
-              </Link>
-              {/* <button className="btn" >Know More!</button> */}
-            </div>
+                {/* </Link> */}
+              </ReactWhatsapp>
+            </Box>
           );
         })}
       </div>

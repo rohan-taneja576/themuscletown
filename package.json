@@ -4,7 +4,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/react": "^2.8.1",
     "@emailjs/browser": "^3.6.2",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
@@ -17,6 +20,8 @@
     "react-icons": "^4.10.1",
     "react-onclickoutside": "^6.12.2",
     "react-scroll": "^1.8.7",
+    "react-whatsapp": "^0.3.0",
+    "swiper": "^10.3.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

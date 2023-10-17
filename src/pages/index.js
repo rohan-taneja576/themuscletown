@@ -1,15 +1,24 @@
 import Head from "next/head";
+import { Box } from "@chakra-ui/react";
+import bg from "../assets/bg.png";
 import Programs from "../components/programs";
 import Reasons from "../components/reasons";
 import Hero from "../components/hero";
 import Plans from "../components/plans";
-import Testimonals from "../components/testimonals";
+// import Testimonals from "../components/testimonals";
 import Footer from "../components/footer";
 import Commitments from "../components/commitment";
 
 function Home() {
   return (
-    <div className="App">
+    <Box
+      display={"flex"}
+      flexDirection={"column"}
+      backgroundColor={"#0e0b16"}
+      backgroundImage={`url(${bg.src})`}
+      gap={"6rem"}
+      overflow={"hidden"}
+    >
       <Head>
         <title>The Muscle Town</title>
         <meta charset="utf-8" />
@@ -27,7 +36,7 @@ function Home() {
       <Plans />
       {/* <Testimonals /> */}
       <Footer />
-    </div>
+    </Box>
   );
 }
 

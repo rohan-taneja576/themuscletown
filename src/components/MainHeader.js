@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import Logo from "../assets/logo.png";
 import Bars from "../assets/bars.png";
 
-const Header = () => {
+const MainHeader = () => {
   const [mobile, setMobile] = useState(true);
   const [menuOpened, setMenuOpened] = useState(false);
 
@@ -20,7 +20,7 @@ const Header = () => {
   }, [mobile]);
 
   return (
-    <div className="header">
+    <div className="main-header">
       <div className="logo-text">
         <Image src={Logo} alt="" className="logo" />
       </div>
@@ -40,52 +40,21 @@ const Header = () => {
           />
         </div>
       ) : (
-        <ul className="header-menu">
+        <ul className="main-header-menu header-menu">
           <li>
-            <Link
-              onClick={() => setMenuOpened(false)}
-              activeClass="active"
-              to="header"
-              spy={true}
-              smooth={true}
-            >
-              Home
-            </Link>
+            <NextLink href="/">Home</NextLink>
           </li>
           <li>
-            <Link
-              onClick={() => setMenuOpened(false)}
-              to="programs"
-              spy={true}
-              smooth={true}
-            >
-              Programs
-            </Link>
+            <NextLink href="/">Programs</NextLink>
           </li>
           <li>
-            <Link
-              onClick={() => setMenuOpened(false)}
-              to="reasons"
-              spy={true}
-              smooth={true}
-            >
-              Why us
-            </Link>
+            <NextLink href="/">Why us</NextLink>
           </li>
           <li>
-            <Link
-              onClick={() => setMenuOpened(false)}
-              to="plans"
-              spy={true}
-              smooth={true}
-            >
-              Plans
-            </Link>
+            <NextLink href="/">Plans</NextLink>
           </li>
           {/* <li>
-            <Link to="blogs" spy={true} smooth={true}>
-              Blogs
-            </Link>
+            <NextLink href="/">Blogs</NextLink>
           </li> */}
           {/* <li>
             <Link
@@ -103,6 +72,9 @@ const Header = () => {
             </Link>
             {/* <Link to="/contact-us">Contact Us</Link> */}
           </li>
+          {/* <li>
+            <NextLink href="/">Contact Us</NextLink>
+          </li> */}
           <li>
             <NextLink href="/supplements">Supplements</NextLink>
           </li>
@@ -112,4 +84,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default MainHeader;

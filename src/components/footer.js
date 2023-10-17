@@ -14,7 +14,7 @@ import {
 const Footer = () => {
   return (
     <div className="Footer-container" id="footer">
-      <hr />
+      <hr style={{ margin: 0 }} />
       <div className="footer">
         <div className="logo-text">
           <Image src={Logo} alt="" />

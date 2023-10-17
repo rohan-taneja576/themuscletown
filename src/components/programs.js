@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { programsData } from "../data/programsData";
 
 const Programs = () => {
@@ -12,7 +11,6 @@ const Programs = () => {
       </div>
       <div className="programs-categories">
         {programsData?.map((_) => {
-          console.log({ _ });
           return (
             <div
               className="category"
