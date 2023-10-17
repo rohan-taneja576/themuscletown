@@ -135,12 +135,7 @@ const Supplements = () => {
             display={"grid"}
             justifyContent={"center"}
             gap={"3rem"}
-            gridTemplateColumns={[
-              "auto",
-              "auto",
-              "auto auto",
-              "auto auto auto auto",
-            ]}
+            gridTemplateColumns={["auto", "auto", "auto auto", "auto auto"]}
           >
             {massGainerData.map((data) => {
               return (
@@ -200,12 +195,7 @@ const Supplements = () => {
             display={"grid"}
             justifyContent={"center"}
             gap={"3rem"}
-            gridTemplateColumns={[
-              "auto",
-              "auto",
-              "auto auto",
-              "auto auto auto auto",
-            ]}
+            gridTemplateColumns={["auto", "auto", "auto auto", "auto auto"]}
           >
             {fatBurnerData.map((data) => {
               return (
@@ -265,12 +255,7 @@ const Supplements = () => {
             display={"grid"}
             justifyContent={"center"}
             gap={"3rem"}
-            gridTemplateColumns={[
-              "auto",
-              "auto",
-              "auto auto",
-              "auto auto auto auto",
-            ]}
+            gridTemplateColumns={["auto", "auto", "auto auto", "auto auto"]}
           >
             {multiVitaminData.map((data) => {
               return (
@@ -330,12 +315,7 @@ const Supplements = () => {
             display={"grid"}
             justifyContent={"center"}
             gap={"3rem"}
-            gridTemplateColumns={[
-              "auto",
-              "auto",
-              "auto auto",
-              "auto auto auto auto",
-            ]}
+            gridTemplateColumns={["auto", "auto", "auto auto", "auto auto"]}
           >
             {fishOilData.map((data) => {
               return (
