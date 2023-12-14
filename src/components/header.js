@@ -82,29 +82,10 @@ const Header = () => {
               Plans
             </Link>
           </li>
-          {/* <li>
-            <Link to="blogs" spy={true} smooth={true}>
-              Blogs
-            </Link>
-          </li> */}
-          {/* <li>
-            <Link
-              onClick={() => setMenuOpened(false)}
-              to="testimonials"
-              spy={true}
-              smooth={true}
-            >
-              Testimonials
-            </Link>
-          </li> */}
           <li>
             <Link to="footer" spy={true} smooth={true}>
               Contact Us
             </Link>
-            {/* <Link to="/contact-us">Contact Us</Link> */}
-          </li>
-          <li>
-            <NextLink href="/supplements">Supplements</NextLink>
           </li>
         </ul>
       )}
