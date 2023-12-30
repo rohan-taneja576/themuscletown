@@ -7,6 +7,10 @@ export const plansData = [
       basic: "2,000",
       elite: "2,700",
     },
+    newPrice: {
+      basic: "1,499",
+      elite: "2,700",
+    },
     features: [
       "2 day free trial",
       "3-month access",
@@ -30,6 +34,10 @@ export const plansData = [
     price: {
       basic: "5,000",
       elite: "7,000",
+    },
+    newPrice: {
+      basic: "2,999",
+      elite: "2,700",
     },
     features: [
       "2 day free trial",
@@ -55,6 +63,10 @@ export const plansData = [
       basic: "9,000",
       elite: "12,000",
     },
+    newPrice: {
+      basic: "5,499",
+      elite: "2,700",
+    },
     features: [
       "3 day free trial",
       "6 months access",
@@ -79,6 +91,10 @@ export const plansData = [
     price: {
       basic: "18,000",
       elite: "24,000",
+    },
+    newPrice: {
+      basic: "8,999",
+      elite: "2,700",
     },
     features: [
       "3 day free trial",

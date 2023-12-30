@@ -110,6 +110,7 @@ code {
   display: flex;
   justify-content: space-between;
   position: relative;
+  margin-top: -5rem; /*upto offer only*/
 }
 .left-h {
   padding: 2rem;

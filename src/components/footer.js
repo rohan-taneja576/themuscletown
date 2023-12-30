@@ -25,7 +25,10 @@ const Footer = () => {
             offers:
           </p>
           <div className="social-links">
-            <Link href="https://www.facebook.com/muscletownfbd" target="_blank">
+            <Link
+              href="https://www.facebook.com/muscletown.fatehabad"
+              target="_blank"
+            >
               <AiFillFacebook />
             </Link>
             <Link

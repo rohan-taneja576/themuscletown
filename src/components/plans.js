@@ -40,7 +40,10 @@ const Plans = () => {
                 <Text fontSize={"1.2rem"} fontWeight={"600"}>
                   Basic:{" "}
                 </Text>
-                <Text fontWeight={"500"}>&#8377; {_.price.basic}</Text>
+                <Text fontWeight={"500"} as="del">
+                  &#8377; {_.price.basic}
+                </Text>
+                <Text fontWeight={"500"}>&#8377; {_.newPrice.basic}</Text>
               </Box>
               <Box display={"flex"} gap={"1rem"} alignItems={"center"}>
                 <Text fontSize={"1.2rem"} fontWeight={"600"}>

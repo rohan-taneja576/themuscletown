@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Box } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import bg from "../assets/bg.png";
 import Programs from "../components/programs";
 import Reasons from "../components/reasons";
@@ -8,6 +8,7 @@ import Plans from "../components/plans";
 // import Testimonals from "../components/testimonals";
 import Footer from "../components/footer";
 import Commitments from "../components/commitment";
+import Offer from "../components/offer";
 
 function Home() {
   return (
@@ -29,6 +30,7 @@ function Home() {
           rel="stylesheet"
         />
       </Head>
+      <Offer />
       <Hero />
       <Commitments />
       <Programs />
