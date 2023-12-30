@@ -4,6 +4,7 @@ import NextLink from "next/link";
 import { Link } from "react-scroll";
 import Logo from "../assets/logo.png";
 import Bars from "../assets/bars.png";
+import { Box } from "@chakra-ui/react";
 
 const Header = () => {
   const [mobile, setMobile] = useState(true);
@@ -25,12 +26,13 @@ const Header = () => {
         <Image src={Logo} alt="" className="logo" />
       </div>
       {menuOpened === false && mobile === true ? (
-        <div
-          style={{
-            backgroundColor: "var(--appColor)",
-            padding: "0.5rem",
-            borderRadius: "5px",
-          }}
+        <Box
+          backgroundColor={"var(--appColor)"}
+          padding="0.5rem"
+          borderRadius="5px"
+          height={menuOpened ? "auto" : "3rem"}
+          display={"flex"}
+          alignItems={"center"}
           onClick={() => setMenuOpened(true)}
         >
           <Image
@@ -38,7 +40,7 @@ const Header = () => {
             alt=""
             style={{ width: "1.5rem", height: "1.5rem" }}
           />
-        </div>
+        </Box>
       ) : (
         <ul className="header-menu">
           <li>
