@@ -106,202 +106,27 @@ const Plans = () => {
                 transform={"translateX(-50%)"}
                 bottom={"1rem"}
               >
-                <Button
-                  color="#fff"
-                  background="linear-gradient(210.41deg, #fa5042 1.14%, #a239ca 100.75%)"
-                  border="navajowhite"
-                  padding="1rem 2rem"
-                  fontSize="1rem"
-                  borderRadius="10px"
-                  cursor={"pointer"}
-                  _hover={{
+                <ReactWhatsapp
+                  number="+91 8930042241"
+                  message="https://themuscletown.in/"
+                  style={{
+                    cursor: "pointer",
+                    color: "#fff",
                     background:
                       "linear-gradient(210.41deg, #fa5042 1.14%, #a239ca 100.75%)",
+                    border: "navajowhite",
+                    padding: "1rem 2rem",
+                    fontSize: "1rem",
+                    borderRadius: "10px",
                   }}
                 >
                   Buy Now
-                </Button>
+                </ReactWhatsapp>
               </Box>
             </Box>
           );
         })}
-
-        {/* <Box
-          width={"500px"}
-          cursor={"pointer"}
-          padding={"20px 20px 20px"}
-          background={"rgb(255 255 255 / 10%)"}
-          borderRadius={"15px"}
-          color={"#fff"}
-          display={"flex"}
-          gap={"1rem"}
-          flexDirection={"column"}
-        >
-          <Box
-            display={"flex"}
-            alignItems={"center"}
-            justifyContent={"space-between"}
-          >
-            <Box>
-              <Heading>06</Heading>
-              <Box>Months</Box>
-            </Box>
-            <Box>
-              <Box display={"flex"} justifyContent={"space-between"}>
-                <Text>Basic Plan - </Text>
-                <Text fontWeight={"500"} as="del">
-                  &#8377; 18,000
-                </Text>
-              </Box>
-              <Box display={"flex"} justifyContent={"space-between"}>
-                <Text>Elite Plan - </Text>
-                <Text fontWeight={"500"} as="del">
-                  &#8377; 24,000
-                </Text>
-              </Box>
-              <Box display={"flex"} justifyContent={"space-between"}>
-                <Text>Offer Price - </Text>
-                <Text fontWeight={"500"}>&#8377; 8,999</Text>
-              </Box>
-            </Box>
-          </Box>
-          <Box background={"#fff"} width={"100%"} height={"0.08rem"}></Box>
-        </Box>
-        <Box
-          width={"500px"}
-          cursor={"pointer"}
-          padding={"20px 20px 20px"}
-          background={"rgb(255 255 255 / 10%)"}
-          borderRadius={"15px"}
-          color={"#fff"}
-          display={"flex"}
-          gap={"1rem"}
-          flexDirection={"column"}
-        >
-          <Box
-            display={"flex"}
-            alignItems={"center"}
-            justifyContent={"space-between"}
-          >
-            <Box>
-              <Heading>03</Heading>
-              <Box>Months</Box>
-            </Box>
-            <Box>
-              <Box display={"flex"} justifyContent={"space-between"}>
-                <Text>Basic Plan - </Text>
-                <Text fontWeight={"500"} as="del">
-                  &#8377; 18,000
-                </Text>
-              </Box>
-              <Box display={"flex"} justifyContent={"space-between"}>
-                <Text>Elite Plan - </Text>
-                <Text fontWeight={"500"} as="del">
-                  &#8377; 24,000
-                </Text>
-              </Box>
-              <Box display={"flex"} justifyContent={"space-between"}>
-                <Text>Offer Price - </Text>
-                <Text fontWeight={"500"}>&#8377; 8,999</Text>
-              </Box>
-            </Box>
-          </Box>
-          <Box background={"#fff"} width={"100%"} height={"0.08rem"}></Box>
-        </Box>
-        <Box
-          width={"500px"}
-          cursor={"pointer"}
-          padding={"20px 20px 20px"}
-          background={"rgb(255 255 255 / 10%)"}
-          borderRadius={"15px"}
-          color={"#fff"}
-          display={"flex"}
-          gap={"1rem"}
-          flexDirection={"column"}
-        >
-          <Box
-            display={"flex"}
-            alignItems={"center"}
-            justifyContent={"space-between"}
-          >
-            <Box>
-              <Heading>01</Heading>
-              <Box>Month</Box>
-            </Box>
-            <Box>
-              <Box display={"flex"} justifyContent={"space-between"}>
-                <Text>Basic Plan - </Text>
-                <Text fontWeight={"500"} as="del">
-                  &#8377; 18,000
-                </Text>
-              </Box>
-              <Box display={"flex"} justifyContent={"space-between"}>
-                <Text>Elite Plan - </Text>
-                <Text fontWeight={"500"} as="del">
-                  &#8377; 24,000
-                </Text>
-              </Box>
-              <Box display={"flex"} justifyContent={"space-between"}>
-                <Text>Offer Price - </Text>
-                <Text fontWeight={"500"}>&#8377; 8,999</Text>
-              </Box>
-            </Box>
-          </Box>
-          <Box background={"#fff"} width={"100%"} height={"0.08rem"}></Box>
-        </Box> */}
       </Box>
-
-      {/* <div className="plans">
-        {plansData?.map((_, i) => {
-          return (
-            <Box
-              key={i}
-              display={"flex"}
-              flexDirection="column"
-              background="#656565"
-              color="#fff"
-              gap="2rem"
-              padding="1.5rem"
-              width="19rem"
-              justify-content="space-around"
-              className="plan"
-            >
-              {_.icon}
-              <Text fontSize={"1.5rem"} fontWeight={"600"}>
-                {_.name}
-              </Text>
-              <Box display={"flex"} gap={"1rem"} alignItems={"center"}>
-                <Text fontSize={"1.2rem"} fontWeight={"600"}>
-                  Basic:{" "}
-                </Text>
-                <Text fontWeight={"500"} as="del">
-                  &#8377; {_.price.basic}
-                </Text>
-                <Text fontWeight={"500"}>&#8377; {_.newPrice.basic}</Text>
-              </Box>
-              <Box display={"flex"} gap={"1rem"} alignItems={"center"}>
-                <Text fontSize={"1.2rem"} fontWeight={"600"}>
-                  Elite:{" "}
-                </Text>
-                <Text fontWeight={"500"}>&#8377; {_.price.elite}</Text>
-              </Box>
-              <ReactWhatsapp
-                number="+91 8930042241"
-                message="https://themuscletown.in/"
-              >
-                {/* <Link
-                  // to="footer"
-                  spy={true}
-                  smooth={true}
-                  style={{ cursor: "pointer" }}
-                > 
-                {/* Know More */}
-      {/* </Link> */}
-      {/* </ReactWhatsapp>
-            </Box>
-          );
-        })} */}
-      {/* </div>  */}
     </div>
   );
 };
