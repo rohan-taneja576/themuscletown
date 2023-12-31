@@ -11,10 +11,11 @@ export const plansData = [
     offerPrice: "1,499",
     features: [
       "2 day free trial",
-      "3-month access",
+      "1 month access",
       "On-ground coaches for assistance",
       "Yoga and aerobics classes",
       "Access to exclusive WhatsApp community",
+      "Access to steam bath",
     ],
   },
   {
@@ -37,10 +38,11 @@ export const plansData = [
     offerPrice: "2,999",
     features: [
       "2 day free trial",
-      "3-month access",
+      "3 months access",
       "On-ground coaches for assistance",
       "Yoga and aerobics classes",
       "Access to exclusive WhatsApp community",
+      "Access to steam bath",
     ],
   },
   {

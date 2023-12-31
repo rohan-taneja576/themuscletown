@@ -10,6 +10,7 @@ import Footer from "../components/footer";
 import Commitments from "../components/commitment";
 import Offer from "../components/offer";
 import Navbar from "../components/Navbar";
+import Popup from "../components/Popup";
 
 function Home() {
   return (
@@ -25,6 +26,7 @@ function Home() {
             rel="stylesheet"
           />
         </Head>
+        <Popup />
         <Box backgroundColor={"#0e0b16"} backgroundImage={`url(${bg.src})`}>
           <Offer />
         </Box>
