@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <Box className="hero" id="home">
       <Box className="left-h">
-        <Header />
+        {/* <Header /> */}
         <div className="hero-text">
           <div>
             <span className="stroke-text">Your Journey </span>
