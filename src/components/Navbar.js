@@ -2,18 +2,9 @@
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
-  Text,
   IconButton,
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
-  useColorModeValue,
   Stack,
 } from "@chakra-ui/react";
 import { Link } from "react-scroll";
@@ -29,26 +20,6 @@ const Links = [
   { linkName: "Plans", to: "plans" },
   { linkName: "Contact Us", to: "footer" },
 ];
-
-const NavLink = (props) => {
-  const { children } = props;
-
-  return (
-    <Box
-      as="a"
-      px={2}
-      py={1}
-      rounded={"md"}
-      _hover={{
-        textDecoration: "none",
-        bg: useColorModeValue("gray.200", "gray.700"),
-      }}
-      href={"#"}
-    >
-      {children}
-    </Box>
-  );
-};
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();

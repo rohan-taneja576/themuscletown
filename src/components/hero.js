@@ -1,14 +1,12 @@
 import Image from "next/image";
 import { Box } from "@chakra-ui/react";
 import { Link } from "react-scroll";
-import Header from "./header";
 import hero_image from "../assets/hero_image.png";
 
 export default function Hero() {
   return (
     <Box className="hero" id="home">
       <Box className="left-h">
-        {/* <Header /> */}
         <div className="hero-text">
           <div>
             <span className="stroke-text">Your Journey </span>
@@ -31,9 +29,9 @@ export default function Hero() {
           </button>
         </div>
       </Box>
-      <div className="right-h">
+      <Box>
         <Image src={hero_image} alt="" className="hero-image" />
-      </div>
+      </Box>
     </Box>
   );
 }
