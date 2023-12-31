@@ -17,7 +17,10 @@ const Popup = () => {
     <>
       <Modal isOpen={isOpen} onClose={onClose} isCentered>
         <ModalOverlay />
-        <ModalContent background={"transparent"}>
+        <ModalContent
+          background={"transparent"}
+          width={["80%", "80%", "100%", "100%"]}
+        >
           <ModalBody padding={0}>
             <motion.div
               initial="hidden"
