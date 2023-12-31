@@ -1,11 +1,7 @@
 import React from "react";
-import { Box, Button, Heading, Text } from "@chakra-ui/react";
-import Image from "next/image";
-import { FaIndianRupeeSign } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import ReactWhatsapp from "react-whatsapp";
 import { plansData } from "../data/plansData";
-import whiteTick from "../assets/whiteTick.png";
 
 const Plans = () => {
   return (

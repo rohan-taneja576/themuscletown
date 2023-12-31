@@ -8,6 +8,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import Image from "next/image";
+import ReactWhatsapp from "react-whatsapp";
 import { motion } from "framer-motion";
 import OfferPoster from "../assets/offer_poster.jpg";
 
@@ -45,12 +46,17 @@ const Popup = () => {
                   background={"#0e0b16"}
                   margin={"-1.5rem -2rem"}
                 />
-                <Image
-                  src={OfferPoster}
-                  alt="Offer Image"
-                  width={600}
-                  height={400}
-                />
+                <ReactWhatsapp
+                  number="+91 8930042241"
+                  message="https://themuscletown.in/"
+                >
+                  <Image
+                    src={OfferPoster}
+                    alt="Offer Image"
+                    width={600}
+                    height={400}
+                  />
+                </ReactWhatsapp>
               </Box>
             </motion.div>
           </ModalBody>
