@@ -5,7 +5,7 @@ import { plansData } from "../data/plansData";
 
 const Plans = () => {
   return (
-    <div className="plans-container">
+    <div className="plans-container" id="plans">
       <Box className="programs-header" style={{ gap: "2rem" }}>
         <span className="stroke-text">START</span>
         <span>YOUR JOURNEY</span>
