@@ -55,9 +55,7 @@ const Plans = () => {
                     alignItems={"center"}
                   >
                     <Text>Basic Plan - </Text>
-                    <Text fontWeight={"500"} as="del">
-                      &#8377; {_.price.basic}
-                    </Text>
+                    <Text fontWeight={"500"}>&#8377; {_.price.basic}</Text>
                   </Box>
                   <Box
                     display={"flex"}
@@ -65,11 +63,9 @@ const Plans = () => {
                     alignItems={"center"}
                   >
                     <Text>Elite Plan - </Text>
-                    <Text fontWeight={"500"} as="del">
-                      &#8377; {_.price.elite}
-                    </Text>
+                    <Text fontWeight={"500"}>&#8377; {_.price.elite}</Text>
                   </Box>
-                  <Box
+                  {/* <Box
                     display={"flex"}
                     justifyContent={"space-between"}
                     alignItems={"center"}
@@ -87,7 +83,7 @@ const Plans = () => {
                     >
                       &#8377; {_.offerPrice}
                     </Text>
-                  </Box>
+                  </Box> */}
                 </Box>
               </Box>
               <Box background={"#fff"} width={"100%"} height={"0.08rem"}></Box>
