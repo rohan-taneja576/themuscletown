@@ -55,7 +55,9 @@ const Plans = () => {
                     alignItems={"center"}
                   >
                     <Text>Basic Plan - </Text>
-                    <Text fontWeight={"500"}>&#8377; {_.price.basic}</Text>
+                    <Text fontWeight={"500"} as="del">
+                      &#8377; {_.price.basic}
+                    </Text>
                   </Box>
                   <Box
                     display={"flex"}
@@ -63,7 +65,9 @@ const Plans = () => {
                     alignItems={"center"}
                   >
                     <Text>Elite Plan - </Text>
-                    <Text fontWeight={"500"}>&#8377; {_.price.elite}</Text>
+                    <Text fontWeight={"500"} as="del">
+                      &#8377; {_.price.elite}
+                    </Text>
                   </Box>
                   <Box
                     display={"flex"}
