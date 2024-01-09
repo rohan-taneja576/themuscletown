@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 const calculateTimeLeft = () => {
   let timeLeft = {};
-  const difference = +new Date("2024-01-07T24:00:00+05:30") - +new Date();
+  const difference = +new Date("2024-01-14T24:00:00+05:30") - +new Date();
   if (difference > 0) {
     timeLeft = {
       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
@@ -39,22 +39,34 @@ const Timer = () => {
           gap={"0.8rem"}
         >
           <Box>
-            <Heading>{timeLeft.days}</Heading>
+            <Heading>
+              {timeLeft.days < 10 ? "0" + timeLeft.days : timeLeft.days}
+            </Heading>
             <span>Days</span>
           </Box>
           <Heading>:</Heading>
           <Box>
-            <Heading>{timeLeft.hours}</Heading>
+            <Heading>
+              {timeLeft.hours < 10 ? "0" + timeLeft.hours : timeLeft.hours}
+            </Heading>
             <span>Hrs</span>
           </Box>
           <Heading>:</Heading>
           <Box>
-            <Heading>{timeLeft.minutes}</Heading>
+            <Heading>
+              {timeLeft.minutes < 10
+                ? "0" + timeLeft.minutes
+                : timeLeft.minutes}
+            </Heading>
             <span>Mins</span>
           </Box>
           <Heading>:</Heading>
           <Box>
-            <Heading>{timeLeft.seconds}</Heading>
+            <Heading>
+              {timeLeft.seconds < 10
+                ? "0" + timeLeft.seconds
+                : timeLeft.seconds}
+            </Heading>
             <span>Sec</span>
           </Box>
         </Box>

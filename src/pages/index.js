@@ -26,10 +26,10 @@ function Home() {
             rel="stylesheet"
           />
         </Head>
-        {/* <Popup />
+        {/* <Popup /> */}
         <Box backgroundColor={"#0e0b16"} backgroundImage={`url(${bg.src})`}>
           <Offer />
-        </Box> */}
+        </Box>
         <Box
           display={"flex"}
           flexDirection={"column"}
