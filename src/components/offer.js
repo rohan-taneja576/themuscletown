@@ -22,7 +22,7 @@ const Offer = () => {
       gap={["2rem", "2rem", "2rem", "1rem"]}
     >
       <Box>
-        <Heading>Pre-Launch Offer valid till January 14th, 2024</Heading>
+        <Heading>Pre-Launch Offer valid till January 22nd, 2024</Heading>
         <Box>
           <Text>on The Muscle Town</Text>
         </Box>

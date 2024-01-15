@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 const calculateTimeLeft = () => {
   let timeLeft = {};
-  const difference = +new Date("2024-01-14T24:00:00+05:30") - +new Date();
+  const difference = +new Date("2024-01-22T24:00:00+05:30") - +new Date();
   if (difference > 0) {
     timeLeft = {
       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
