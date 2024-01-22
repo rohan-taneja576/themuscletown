@@ -313,10 +313,10 @@ code {
   width: 18.7rem;
   grid-row: 2;
   grid-column: 2/3;
-  height: auto;
+  height: 15rem;
 }
 .left-r > :nth-child(4) {
-  width: 13.2rem;
+  width: 16.2rem;
   grid-row: 2;
   grid-column: 3/4;
   height: 15rem;
@@ -564,9 +564,8 @@ code {
     width: 15rem;
     height: 10rem;
   }
-  .left-r > :nth-child(3) {
-    width: 7rem;
-  }
+
+  .left-r > :nth-child(3),
   .left-r > :nth-child(4) {
     width: 7rem;
     height: 6rem;
