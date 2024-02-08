@@ -35,7 +35,7 @@ export const plansData = [
       basic: "5,000",
       elite: "7,000",
     },
-    offerPrice: "3,999",
+    offerPrice: "4,499",
     features: [
       "2 day free trial",
       "3 months access",
