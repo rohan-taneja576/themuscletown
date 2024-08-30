@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import bg from "../assets/bg.png";
 import Programs from "../components/programs";
 import Reasons from "../components/reasons";
@@ -8,9 +8,9 @@ import Plans from "../components/plans";
 // import Testimonals from "../components/testimonals";
 import Footer from "../components/footer";
 import Commitments from "../components/commitment";
-import Offer from "../components/offer";
+// import Offer from "../components/offer";
 import Navbar from "../components/Navbar";
-import Popup from "../components/Popup";
+// import Popup from "../components/Popup";
 
 function Home() {
   return (
@@ -27,9 +27,9 @@ function Home() {
           />
         </Head>
         {/* <Popup /> */}
-        <Box backgroundColor={"#0e0b16"} backgroundImage={`url(${bg.src})`}>
+        {/* <Box backgroundColor={"#0e0b16"} backgroundImage={`url(${bg.src})`}>
           <Offer />
-        </Box>
+        </Box> */}
         <Box
           display={"flex"}
           flexDirection={"column"}

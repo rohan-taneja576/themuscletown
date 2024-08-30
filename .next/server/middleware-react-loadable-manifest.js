@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{\"../components/offer.js -> ../components/timer\":{\"id\":\"../components/offer.js -> ../components/timer\",\"files\":[\"static/chunks/src_components_timer_js.js\"]}}"
+self.__REACT_LOADABLE_MANIFEST="{}"
